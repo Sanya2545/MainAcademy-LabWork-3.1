@@ -22,7 +22,10 @@ namespace CSharp_Net_module1_3_1_lab
 
                     // 1) assign some value to cell of array arr, which index is out of range
                     for (int i = 0; i < arr.Length; i++)
+                    {
+                        this.arr[arr.Length + 1] = 5;
                         this.arr[i] = arr[i] / arr[i + 1];
+                    }
 
 
                     // 7) use unchecked to assign result of operation 1000000000 * 100
